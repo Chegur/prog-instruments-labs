@@ -56,7 +56,7 @@ test:
 	@echo "Запуск тестов (pytest)..."
 	$(PYTHON_VENV) -m pytest $(TEST_DIR) -v --tb=short
 
-# Проверка стиля кода (без исправления)
+# Проверка стиля кода и автоисправление
 lint:
 	@echo "Проверка стиля кода (Ruff)..."
 	$(PYTHON_VENV) -m ruff check $(SRC_DIR) $(TEST_DIR)
